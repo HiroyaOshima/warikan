@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BA115A291E0667EC00DAD240 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA115A281E0667EC00DAD240 /* AppDelegate.swift */; };
 		BA115A2B1E0667EC00DAD240 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA115A2A1E0667EC00DAD240 /* ViewController.swift */; };
 		BA115A2E1E0667EC00DAD240 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA115A2C1E0667EC00DAD240 /* Main.storyboard */; };
 		BA115A301E0667EC00DAD240 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA115A2F1E0667EC00DAD240 /* Assets.xcassets */; };
 		BA115A331E0667EC00DAD240 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA115A311E0667EC00DAD240 /* LaunchScreen.storyboard */; };
 		BA115A3E1E0667EC00DAD240 /* calcilatorProTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA115A3D1E0667EC00DAD240 /* calcilatorProTests.swift */; };
 		BA115A491E0667EC00DAD240 /* calcilatorProUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA115A481E0667EC00DAD240 /* calcilatorProUITests.swift */; };
+		BA64C9021E1D1A7A00855D63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64C9011E1D1A7A00855D63 /* AppDelegate.swift */; };
+		BA64C9041E1D223100855D63 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64C9031E1D223100855D63 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,6 @@
 
 /* Begin PBXFileReference section */
 		BA115A251E0667EC00DAD240 /* calcilatorPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calcilatorPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		BA115A281E0667EC00DAD240 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA115A2A1E0667EC00DAD240 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BA115A2D1E0667EC00DAD240 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA115A2F1E0667EC00DAD240 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		BA115A441E0667EC00DAD240 /* calcilatorProUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calcilatorProUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA115A481E0667EC00DAD240 /* calcilatorProUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calcilatorProUITests.swift; sourceTree = "<group>"; };
 		BA115A4A1E0667EC00DAD240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA64C9011E1D1A7A00855D63 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../test/test/AppDelegate.swift; sourceTree = "<group>"; };
+		BA64C9031E1D223100855D63 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +99,10 @@
 		BA115A271E0667EC00DAD240 /* calcilatorPro */ = {
 			isa = PBXGroup;
 			children = (
-				BA115A281E0667EC00DAD240 /* AppDelegate.swift */,
+				BA64C9011E1D1A7A00855D63 /* AppDelegate.swift */,
 				BA115A2A1E0667EC00DAD240 /* ViewController.swift */,
 				BA115A2C1E0667EC00DAD240 /* Main.storyboard */,
+				BA64C9031E1D223100855D63 /* SecondViewController.swift */,
 				BA115A2F1E0667EC00DAD240 /* Assets.xcassets */,
 				BA115A311E0667EC00DAD240 /* LaunchScreen.storyboard */,
 				BA115A341E0667EC00DAD240 /* Info.plist */,
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					BA115A241E0667EB00DAD240 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = ZC9946ZJCS;
 						ProvisioningStyle = Automatic;
 					};
 					BA115A381E0667EC00DAD240 = {
@@ -259,8 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA64C9041E1D223100855D63 /* SecondViewController.swift in Sources */,
+				BA64C9021E1D1A7A00855D63 /* AppDelegate.swift in Sources */,
 				BA115A2B1E0667EC00DAD240 /* ViewController.swift in Sources */,
-				BA115A291E0667EC00DAD240 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZC9946ZJCS;
 				INFOPLIST_FILE = calcilatorPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eava.com.calcilatorPro;
@@ -424,6 +430,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = ZC9946ZJCS;
 				INFOPLIST_FILE = calcilatorPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = eava.com.calcilatorPro;
@@ -505,6 +512,7 @@
 				BA115A4F1E0667EC00DAD240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA115A501E0667EC00DAD240 /* Build configuration list for PBXNativeTarget "calcilatorProTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +521,7 @@
 				BA115A521E0667EC00DAD240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA115A531E0667EC00DAD240 /* Build configuration list for PBXNativeTarget "calcilatorProUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +530,7 @@
 				BA115A551E0667EC00DAD240 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
