@@ -13,23 +13,32 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     @IBOutlet weak var label1: UILabel!
     var text1:String = ""
+    var text2:String = ""
+    var row:Int = 1
+    var textField3:AppDelegate = UIApplication.shared.delegate as! AppDelegate
     
     
-    @IBOutlet weak var memoTableVIew: UITableView!
+    @IBOutlet weak var memoTableView: UITableView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         label1.text = text1
         
-        memoTableVIew.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        memoTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
+        
+        var message = textField3.message
+        
+        row = row + Int(message!)!
+        memoTableView.reloadData()
         
 
         // Do any additional setup after loading the view.
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return row
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

@@ -17,10 +17,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var textField2: UITextField!
     
+    var textField3:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        textField2.text = textField3.message
+        
+        textField3.message =  "message"
+        
     }
     
     override func didReceiveMemoryWarning() {
