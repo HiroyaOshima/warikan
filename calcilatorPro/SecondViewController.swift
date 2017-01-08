@@ -10,7 +10,7 @@ import UIKit
 
 class SecondViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
     
-    
+    //合計金額
     @IBOutlet weak var label1: UILabel!
     var text1:String = ""
     var text2:String = ""

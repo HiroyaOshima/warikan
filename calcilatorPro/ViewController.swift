@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     
-   
+    //合計金額
     @IBOutlet weak var textField: UITextField!
     
     
