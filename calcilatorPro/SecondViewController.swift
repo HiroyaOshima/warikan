@@ -13,31 +13,29 @@ class SecondViewController: UIViewController,UITableViewDelegate,UITableViewData
     
     @IBOutlet weak var label1: UILabel!
     var text1:String = ""
-    var text2:String = ""
-    
-    //セルの個数を指定するデリゲートメソッド
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return text2.count
-    }
     
     
-    @IBAction func backHome(_ sender: Any) {
-        //現在のシーンを閉じて元のシーンに戻る
-        self.dismiss(animated: true,completion: nil)
-    }
-    
-    
-    
+    @IBOutlet weak var memoTableVIew: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         label1.text = text1
         
-        textField2.text = text2 
+        memoTableVIew.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         
 
         // Do any additional setup after loading the view.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 20
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath) as! UITableViewCell
+        cell.textLabel?.text = String(indexPath.row)
+        return cell
     }
 
     override func didReceiveMemoryWarning() {
